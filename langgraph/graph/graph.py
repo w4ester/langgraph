@@ -162,8 +162,8 @@ class Graph:
             conditional_edge_mapping.values()
         ).difference([END]).difference(self.nodes):
             raise ValueError(
-                f"Missing nodes which are in conditional edge mapping. Mapping "
-                f"contains possible destinations: "
+                "Missing nodes which are in conditional edge mapping. Mapping "
+                "contains possible destinations: "
                 f"{list(conditional_edge_mapping.values())}. Possible nodes are "
                 f"{list(self.nodes.keys())}."
             )
