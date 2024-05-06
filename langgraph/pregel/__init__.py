@@ -1171,8 +1171,6 @@ def _prepare_next_tasks(
                         break
                     except EmptyChannelError:
                         pass
-                else:
-                    continue
             else:
                 raise RuntimeError(
                     "Invalid channels type, expected list or dict, got {proc.channels}"
